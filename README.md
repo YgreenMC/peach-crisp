@@ -2,6 +2,9 @@
 
 Update log:
 
+**1.2**：
+- Added some language translations.
+
 **1.2-pre-2**：
 - Optimized and refactored the code.
 - Added some language translations.
@@ -67,6 +70,9 @@ The synthesis recipe for Golden Peach Crisp is the same as that for Golden Apple
 #### 为我的世界新增了两款食物：桃酥和金桃酥。
 
 更新日志：
+
+**1.2**：
+- 加入了一些语言翻译。
 
 **1.2-pre-2**：
 - 对代码进行了优化和重构。
