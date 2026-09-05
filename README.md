@@ -2,6 +2,9 @@
 
 Update log:
 
+**1.2.2**：
+- Add "Obtain Golden Peach Crisp" to the achievement acquisition method for "Peach Crisp!".
+
 **1.2.1**：
 - Add the Golden Peach Crisp to the chest of the ruined portal.
 
@@ -73,6 +76,9 @@ The synthesis recipe for Golden Peach Crisp is the same as that for Golden Apple
 #### 为我的世界新增了两款食物：桃酥和金桃酥。
 
 更新日志：
+
+**1.2.2**：
+- 将“获得金桃酥”加入到“桃酥！”成就的获取方式中。
 
 **1.2.1**：
 - 将金桃酥加入到废弃传送门的箱子中。

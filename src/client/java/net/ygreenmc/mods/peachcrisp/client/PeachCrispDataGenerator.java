@@ -174,7 +174,8 @@ public class PeachCrispDataGenerator implements DataGeneratorEntrypoint {
                         false
                     )
                     .addCriterion("has_peach_crisp", InventoryChangeTrigger.TriggerInstance.hasItems(PeachCrisp.PEACH_CRISP))
-                    .requirements(AdvancementRequirements.Strategy.AND)
+                    .addCriterion("has_golden_peach_crisp", InventoryChangeTrigger.TriggerInstance.hasItems(PeachCrisp.GOLDEN_PEACH_CRISP))
+                    .requirements(AdvancementRequirements.Strategy.OR)
                     .build(modId("peach_crisp"))
             );
         }
