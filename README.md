@@ -2,6 +2,9 @@
 
 Update log:
 
+**1.2.1**：
+- Add the Golden Peach Crisp to the chest of the ruined portal.
+
 **1.2**：
 - Added some language translations.
 
@@ -70,6 +73,9 @@ The synthesis recipe for Golden Peach Crisp is the same as that for Golden Apple
 #### 为我的世界新增了两款食物：桃酥和金桃酥。
 
 更新日志：
+
+**1.2.1**：
+- 将金桃酥加入到废弃传送门的箱子中。
 
 **1.2**：
 - 加入了一些语言翻译。

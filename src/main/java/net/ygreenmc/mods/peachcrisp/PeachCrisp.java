@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.loot.v3.LootTableSource;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -117,6 +116,7 @@ public class PeachCrisp implements ModInitializer {
                 case "chests/village/village_snowy_house" -> addPeachCrisp(tableBuilder, 0, 8, 2, 3);
                 case "chests/village/village_taiga_house" -> addPeachCrisp(tableBuilder, 0, 8, 2, 3);
                 case "chests/village/village_temple" -> addPeachCrisp(tableBuilder, 0, 5, 2, 3);
+                case "chests/ruined_portal" -> addGoldenPeachCrisp(tableBuilder, 0, 15);
                 default -> {
                 }
             }
@@ -124,11 +124,19 @@ public class PeachCrisp implements ModInitializer {
     }
 
     private static void addPeachCrisp(LootTable.Builder tableBuilder, int poolIndex, int weight, float minCount, float maxCount) {
+        addItem(tableBuilder, poolIndex, weight, minCount, maxCount, PEACH_CRISP);
+    }
+
+    private static void addGoldenPeachCrisp(LootTable.Builder tableBuilder, int poolIndex, int weight) {
+        addItem(tableBuilder, poolIndex, weight, 1.0f, 1.0f, GOLDEN_PEACH_CRISP);
+    }
+
+    private static void addItem(LootTable.Builder tableBuilder, int poolIndex, int weight, float minCount, float maxCount, Item item) {
         int[] index = {0};
         ((FabricLootTableBuilder) tableBuilder).modifyPools(poolBuilder -> {
             if (index[0] == poolIndex) {
                 poolBuilder.add(
-                    LootItem.lootTableItem(PEACH_CRISP)
+                    LootItem.lootTableItem(item)
                         .setWeight(weight)
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minCount, maxCount), false))
                 );
